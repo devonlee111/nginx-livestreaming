@@ -8,5 +8,5 @@ cd nginx-1.15.0
 make
 make install
 cd ../
-cp nginx.conf /usr/local/nginx/conf/
-cp html/* /usr/local/nginx/html/
+mv nginx.conf /usr/local/nginx/conf/
+mv html/* /usr/local/nginx/html/
