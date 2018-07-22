@@ -11,6 +11,6 @@ make install
 cd ../
 mkdir /usr/local/nginx/scripts
 mv data/nginx.conf /usr/local/nginx/conf/
-mv data/html/* /usr/local/nginx/html/
+mv data/index.html /usr/local/nginx/html/
 mv data/upload.php /usr/local/nginx/scripts/
 rm -rf data/
