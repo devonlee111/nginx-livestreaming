@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to nginx!</title>
+	<script src="shaka-player/dist/shaka-player.compiled.js"></script>
+	<script src="myapp.js"></script>
+</head>
+
+<body>
+	<!--<video width="640" height="480" controls autoplay src="http://127.0.0.1/play/hls/stream/index.m3u8"></video>
+	-->
+	<!--<video data-dashjs-player width="640" height="480" controls autoplay src="http://18.220.110.82/play/dash/stream/index.mpd"></video>
+	-->
+	<video id="video" width="640" poster="//shaka-player-demo.appspot.com/assets/poster.jpg"></video>
+	<form action="upload.php" method="post"
+		enctype="multipart/form-data">
+      		<!--multipart/form-data ensures that form
+        	data is going to be encoded as MIME data-->
+ 
+      		<h2>Upload File</h2>
+      		<input type="file" name="uploadFile" id="fileSelect"><br><br>
+      		<input type="submit" name="submit" value="Upload"><br><br>
+    	</form>
+</body>
+</html>
